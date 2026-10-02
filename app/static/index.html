@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>种蛋孵化管理</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="logo"><span class="dot"></span>种蛋孵化管理</div>
+    <nav id="nav">
+      <a href="#/batches" data-route="batches">种蛋批次</a>
+      <a href="#/incubators" data-route="incubators">孵化箱盘位</a>
+      <a href="#/moves" data-route="moves">异常移盘</a>
+      <a href="#/incidents" data-route="incidents">处置记录</a>
+    </nav>
+    <div class="actor">
+      当前操作员
+      <select id="actor" title="切换登录身份（权限由后端强制校验）"></select>
+      <span class="role-tag" id="roleTag"></span>
+    </div>
+  </div>
+</header>
+<main id="app"></main>
+<div class="tooltip" id="tooltip"></div>
+<div class="modal-bg" id="modalBg"><div class="modal" id="modalBox"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
