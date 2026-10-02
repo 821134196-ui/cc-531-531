@@ -13,3 +13,7 @@ build/
 轨迹/
 录屏/
 视频/
+hatchery.db
+hatchery.db-wal
+hatchery.db-shm
+uploads/
